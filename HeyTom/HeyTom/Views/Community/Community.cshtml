@@ -1,0 +1,39 @@
+﻿
+@{
+    @using HeyTom.Domain.Model;
+    ViewData["Title"] = "Community";
+    var newVips = (List<Vip>)ViewData["NewVips"];
+}
+
+<h3>Welcome to new cats</h3>
+<div class="container" style="float:left;width:800px;">
+    @{
+        int rows = newVips.Count / 3;
+
+        for (int i = 0; i < rows; i++)
+        {
+            <div class="row">
+                @for (int j = 3 * i; j < i * 3 + 3; j++)
+                {
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="Home">
+                                <img src=@newVips[j].Icon  />
+                            </a>
+                            <div class="caption">
+                                <h6>@newVips[j].Name</h6>
+                                <h6>@newVips[j].Birthday</h6>
+                                <h6>@newVips[j].Sex</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    }
+</div>
+<div style="float:right;width:300px;">
+    <div style="float:right;width:200px">此处是广告位，欢迎加入</div>
+</div>
+

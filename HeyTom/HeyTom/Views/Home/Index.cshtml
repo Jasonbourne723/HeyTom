@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var extendBanners = (List<HeyTom.Domain.Model.ExtendBanner>)ViewData["extendBanners"];
+}
+<div class="container">
+    <div class="text-center">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                @{
+                    for (int i = 0; i < extendBanners.Count; i++)
+                    {
+                        <li data-target="#demo" data-slide-to=@i class="active"></li>
+                    }
+                }
+            </ul>
+            <!-- 轮播图片 -->
+            <div class="carousel-inner role=" listbox"">
+                @{
+                    int j = 0;
+                    foreach (var extendBanner in extendBanners)
+                    {
+                        if (j++ == 0)
+                        {
+                            <div class="item  active">
+                                <img src=@extendBanner.imageUrl width="1800" >
+                                <div class="carousel-caption">
+                                    <h3>@extendBanner.title</h3>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="item">
+                                <img src=@extendBanner.imageUrl  width="1800">
+                                <div class="carousel-caption">
+                                    <h3>@extendBanner.title</h3>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+            <a class="left carousel-control" href="#demo" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#demo" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            @*左右切换按钮*@
+            @*<a class="left carousel-control" href="#demo" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#demo" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>*@
+            @*<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>*@
+        </div>
+      
+    </div>
+</div>
