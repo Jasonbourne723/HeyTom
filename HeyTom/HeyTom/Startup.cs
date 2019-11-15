@@ -8,6 +8,7 @@ using HeyTom.Domain.Interface;
 using HeyTom.Domain.Model;
 using HeyTom.Infr;
 using HeyTom.Infr.Dal;
+using HeyTom.Infr.Implementtation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,10 +38,12 @@ namespace HeyTom
 				options.MinimumSameSitePolicy = SameSiteMode.None;
 			});
 
-			services.AddDbContext<BaseDbContext<Vip>>(options => options.UseMySQL(Configuration.GetConnectionString("Default")));
-			services.AddScoped<VipDbContext>();
+			services.AddDbContext<BaseDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("Default")));
 			services.AddScoped<IExtendBannerRepository, ExtendBannerRepository>();
+			services.AddScoped<ICatRepository, CatRepository>();
 			services.AddScoped<IVipRepository, VipRepository>();
+			services.AddScoped<ISimpleSayRepository, SimpleSayRepository>();
+			services.AddScoped<IPhotoRepository, PhotoRepository>();
 			services.AddScoped<IExtendActiveService, ExtendActiveService>();
 			services.AddScoped<IVipService, VipService>();
 		

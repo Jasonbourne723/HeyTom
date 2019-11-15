@@ -6,10 +6,8 @@ using HeyTom.DomainCore.Interface;
 
 namespace HeyTom.Domain.Interface
 {
-	public interface IVipRepository :IRepository<Vip>
+	public interface IPhotoRepository :IRepository<Photo>
 	{
-		List<Vip> GetNewVips(int count);
-
-		Vip GetByVipId(long vipId);
+		List<Photo> GetByVipId(long vipId);
 	}
 }

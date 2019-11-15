@@ -4995,7 +4995,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0"
+          "HeyTom.DomainCore": "1.0.0",
+          "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "compile": {
           "bin/placeholder/HeyTom.Domain.dll": {}

@@ -31,19 +31,20 @@ namespace HeyTom.Domain.Model
 		//public Cat cat { get; set; }
 	}
 
-	public class Adress
-	{
-		
-	}
-
 	public class Cat
 	{
-		public string name { get; set; }
+		public long CatId { get; set; }
 
-		public string icon { get; set; }
+		public long VipId { get; set; }
 
-		public string sex { get; set; }
+		public string Name { get; set; }
 
-		public DateTime	birthday { get; set; }
+		public DateTime	Birthday { get; set; }
+
+		public string Icon { get; set; }
+
+		public short Sex { get; set; }
+
+		public long BreedId { get; set; }
 	}
 }

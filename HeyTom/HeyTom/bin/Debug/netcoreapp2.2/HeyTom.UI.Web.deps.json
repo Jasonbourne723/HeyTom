@@ -611,7 +611,8 @@
       },
       "HeyTom.Domain/1.0.0": {
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0"
+          "HeyTom.DomainCore": "1.0.0",
+          "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "runtime": {
           "HeyTom.Domain.dll": {}

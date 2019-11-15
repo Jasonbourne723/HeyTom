@@ -38,3 +38,4 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\Razor\Views\Community\Community.g.cshtml.cs
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.DomainCore.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.DomainCore.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\Razor\Views\Vip\VipPersonalInfo.g.cshtml.cs

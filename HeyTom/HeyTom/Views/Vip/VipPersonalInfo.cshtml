@@ -1,0 +1,108 @@
+﻿
+@{
+    @using HeyTom.Domain.Model;
+    ViewData["Title"] = "VipPersonalInfo";
+    var vip = (Vip)ViewData["vip"];
+    var cats = (List<Cat>)ViewData["cats"];
+    var photos = (List<Photo>)ViewData["photos"];
+    var simpleSays = (List<SimpleSay>)ViewData["simpleSays"];
+}
+
+
+<div class="container" style="float:left;width:200px;">
+    <h3>个人资料</h3>
+    <img src="@vip.Icon" width="100" />
+    <p>昵称：@vip.Name</p>
+    <p>@vip.Mark</p>
+    @if (cats != null && cats.Count > 0)
+    {
+        foreach (var item in cats)
+        {
+            <div>
+                <img src="@item.Icon" width="100" />
+                <p>name: @item.Name</p>
+            </div>
+        }
+    }
+    else
+    {
+        <div>
+            <p>没有猫咪噢</p>
+        </div>
+    }
+</div>
+<div class="container" style="float:right;width:900px;">
+    <nav class="navbar navbar-default">
+        @*<div class="container">*@
+        <ul class="nav navbar-nav">
+            <li class="active" id="111" onclick="display('photodiv','simpleSaydiv')"><a href="#">个人动态</a></li>
+            <li id="222" onclick="display('simpleSaydiv','photodiv')"><a href="#">猫咪相册</a></li>
+        </ul>
+        @*</div>*@
+    </nav>
+    <div id="simpleSaydiv" style="display:">
+        @{
+            if (simpleSays != null && simpleSays.Count > 0)
+            {
+
+                foreach (var item in simpleSays)
+                {
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p>@item.Body</p>
+                            @if (item.Photos != null && item.Photos.Count > 0)
+                            {
+                                foreach (var photo in item.Photos)
+                                {
+                                    <img src="@photo.PhotoUrl" width="150" style="margin:initial;" />
+                                }
+                            }
+                            <p style="float:right">@item.CreateTime</p>
+                        </div>
+                    </div>
+                }
+            }
+        }
+    </div>
+    <div id="photodiv" style="display:none" >
+        <div class="container">
+            @if (photos != null && photos.Count > 0)
+            {
+                int rows = photos.Count / 3;
+                if (photos.Count % 3 > 0)
+                {
+                    rows++;
+                }
+                for (int i = 0; i < rows; i++)
+                {
+                    <div class="row">
+                        @for (int j = i * 3; j < i * 3 + 3&&j < photos.Count; j++)
+                        {
+                            <div class="col-md-3">
+                                <div class="thumbnail">
+                                    <img src="@photos[j].PhotoUrl" width="200" height="100" />
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function display(hiddenId, showId) {
+        var hiddentraget = document.getElementById(hiddenId);
+        var showtraget = document.getElementById(showId);
+        hiddentraget.style.display = "none";
+        showtraget.style.display = "";
+        //  if(traget.style.display=="none"){
+        //      traget.style.display="";
+        //  }else{
+        //      traget.style.display="none";
+        //}
+    }
+</script>
+
