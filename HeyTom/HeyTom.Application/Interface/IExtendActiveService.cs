@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HeyTom.Domain.Model;
+using HeyTom.Domain.Models;
 
 namespace HeyTom.Application.Interface
 {

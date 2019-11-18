@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using HeyTom.Domain.Interface;
-using HeyTom.Domain.Model;
-using HeyTom.DomainCore.Implementation;
-using HeyTom.Infr.Dal;
+﻿using System.Collections.Generic;
 using System.Linq;
+using HeyTom.Domain.Interface;
+using HeyTom.Domain.Models;
+using HeyTom.Infra.DataContext;
+using HeyTom.Infra.Implementation;
 
-namespace HeyTom.Infr.Implementtation
+namespace HeyTom.Infra.Implementtation
 {
 	public class CatRepository : Repository<Cat>, ICatRepository
 	{
@@ -18,6 +16,11 @@ namespace HeyTom.Infr.Implementtation
 		public List<Cat> GetByVipId(long vipId)
 		{
 			return _set.Where(x => x.VipId == vipId)?.ToList();
+		}
+
+		public override string GetTableName()
+		{
+			return "Vip_Cat";
 		}
 	}
 }

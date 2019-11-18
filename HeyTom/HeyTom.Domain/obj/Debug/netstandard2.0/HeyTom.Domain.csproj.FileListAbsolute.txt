@@ -7,6 +7,6 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\obj\Debug\netstandard2.0\HeyTom.Domai
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\obj\Debug\netstandard2.0\HeyTom.Domain.AssemblyInfo.cs
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\obj\Debug\netstandard2.0\HeyTom.Domain.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\obj\Debug\netstandard2.0\HeyTom.Domain.pdb
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\bin\Debug\netstandard2.0\HeyTom.DomainCore.dll
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\bin\Debug\netstandard2.0\HeyTom.DomainCore.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\bin\Debug\netstandard2.0\HeyTom.Infra.Util.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\bin\Debug\netstandard2.0\HeyTom.Infra.Util.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Domain\obj\Debug\netstandard2.0\HeyTom.Domain.csproj.CopyComplete

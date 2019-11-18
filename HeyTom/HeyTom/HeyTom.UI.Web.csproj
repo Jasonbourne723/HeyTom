@@ -10,13 +10,15 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Scrutor" Version="3.1.0" />
   </ItemGroup>
 
 
   <ItemGroup>
+    <ProjectReference Include="..\DependencyInjection\HeyTom.Infra.Ioc.csproj" />
     <ProjectReference Include="..\HeyTom.Application\HeyTom.Application.csproj" />
     <ProjectReference Include="..\HeyTom.Domain\HeyTom.Domain.csproj" />
-    <ProjectReference Include="..\HeyTom.Infr\HeyTom.Infr.csproj" />
+    <ProjectReference Include="..\HeyTom.Infr\HeyTom.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "HeyTom.Domain/1.0.0": {
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0",
+          "HeyTom.Infra.Util": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18",
           "NETStandard.Library": "2.0.3"
         },
@@ -1076,9 +1076,9 @@
           }
         }
       },
-      "HeyTom.DomainCore/1.0.0": {
+      "HeyTom.Infra.Util/1.0.0": {
         "runtime": {
-          "HeyTom.DomainCore.dll": {}
+          "HeyTom.Infra.Util.dll": {}
         }
       }
     }
@@ -1719,7 +1719,7 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "HeyTom.DomainCore/1.0.0": {
+    "HeyTom.Infra.Util/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

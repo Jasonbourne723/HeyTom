@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using HeyTom.Domain.Interface;
-using HeyTom.Domain.Model;
-using HeyTom.DomainCore.Implementation;
-using HeyTom.Infr.Dal;
+using HeyTom.Domain.Models;
+using HeyTom.Infra.DataContext;
+using HeyTom.Infra.Implementation;
 
-namespace HeyTom.Infr.Implementtation
+namespace HeyTom.Infra.Implementtation
 {
 	public class PhotoRepository : Repository<Photo>, IPhotoRepository
 	{
@@ -19,5 +17,10 @@ namespace HeyTom.Infr.Implementtation
 		{
 			return _set.Where(x => x.VipId == vipId)?.ToList();
 		}
- 	}
+
+		public override string GetTableName()
+		{
+			return "Vip_Photo";
+		}
+	}
 }

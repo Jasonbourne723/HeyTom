@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using HeyTom.Domain.Interface;
-using HeyTom.Domain.Model;
-using HeyTom.DomainCore.Implementation;
-using HeyTom.DomainCore.Interface;
-using HeyTom.Infr.Dal;
+using HeyTom.Domain.Models;
+using HeyTom.Infra.DataContext;
+using Microsoft.EntityFrameworkCore;
 
-namespace HeyTom.Infr
+namespace HeyTom.Infra.Implementation
 {
 	public class VipRepository : Repository<Vip>, IVipRepository
 	{
@@ -18,12 +15,13 @@ namespace HeyTom.Infr
 
 		public List<Vip> GetNewVips(int count)
 		{
-			return _set.Take(9).ToList();
+			//return _set.FromSql("sql",)
+			return _set.Take(count).OrderBy(x=>x.Id).ToList();
 		}
 
-		public Vip GetByVipId(long vipId)
+		public override string GetTableName()
 		{
-			return _set.SingleOrDefault(x => x.VipId == vipId);
+			return "Vip";
 		}
 	}
 }

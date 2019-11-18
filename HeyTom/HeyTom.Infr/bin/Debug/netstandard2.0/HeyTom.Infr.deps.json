@@ -1078,16 +1078,10 @@
       },
       "HeyTom.Domain/1.0.0": {
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "runtime": {
           "HeyTom.Domain.dll": {}
-        }
-      },
-      "HeyTom.DomainCore/1.0.0": {
-        "runtime": {
-          "HeyTom.DomainCore.dll": {}
         }
       }
     }
@@ -1729,11 +1723,6 @@
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
     "HeyTom.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "HeyTom.DomainCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

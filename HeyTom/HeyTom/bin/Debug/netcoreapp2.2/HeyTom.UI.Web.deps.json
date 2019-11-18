@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "e4679b7790c2d3520b827152f632bb23be66cb65"
+    "signature": "475a632f5639ff09455aaf3357e50051a80e36fc"
   },
   "compilationOptions": {
     "defines": [
@@ -26,17 +26,49 @@
         "dependencies": {
           "HeyTom.Application": "1.0.0",
           "HeyTom.Domain": "1.0.0",
-          "HeyTom.Infr": "1.0.0",
+          "HeyTom.Infra.Data": "1.0.0",
+          "HeyTom.Infra.Ioc": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
+          "Scrutor": "3.1.0"
         },
         "runtime": {
           "HeyTom.UI.Web.dll": {}
         },
         "compile": {
           "HeyTom.UI.Web.dll": {}
+        }
+      },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "BouncyCastle.NetCore/1.8.3": {
@@ -271,6 +303,21 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Scrutor/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Scrutor.dll": {
+            "assemblyVersion": "3.0.2.0",
+            "fileVersion": "3.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Scrutor.dll": {}
         }
       },
       "SSH.NET/2016.1.0": {
@@ -600,6 +647,7 @@
       },
       "HeyTom.Application/1.0.0": {
         "dependencies": {
+          "AutoMapper": "9.0.0",
           "HeyTom.Domain": "1.0.0"
         },
         "runtime": {
@@ -611,7 +659,7 @@
       },
       "HeyTom.Domain/1.0.0": {
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0",
+          "HeyTom.Infra.Util": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "runtime": {
@@ -621,24 +669,39 @@
           "HeyTom.Domain.dll": {}
         }
       },
-      "HeyTom.DomainCore/1.0.0": {
-        "runtime": {
-          "HeyTom.DomainCore.dll": {}
-        },
-        "compile": {
-          "HeyTom.DomainCore.dll": {}
-        }
-      },
-      "HeyTom.Infr/1.0.0": {
+      "HeyTom.Infra.Data/1.0.0": {
         "dependencies": {
           "HeyTom.Domain": "1.0.0",
+          "HeyTom.Infra.Util": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "runtime": {
-          "HeyTom.Infr.dll": {}
+          "HeyTom.Infra.Data.dll": {}
         },
         "compile": {
-          "HeyTom.Infr.dll": {}
+          "HeyTom.Infra.Data.dll": {}
+        }
+      },
+      "HeyTom.Infra.Ioc/1.0.0": {
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "HeyTom.Application": "1.0.0",
+          "HeyTom.Infra.Data": "1.0.0",
+          "Scrutor": "3.1.0"
+        },
+        "runtime": {
+          "HeyTom.Infra.Ioc.dll": {}
+        },
+        "compile": {
+          "HeyTom.Infra.Ioc.dll": {}
+        }
+      },
+      "HeyTom.Infra.Util/1.0.0": {
+        "runtime": {
+          "HeyTom.Infra.Util.dll": {}
+        },
+        "compile": {
+          "HeyTom.Infra.Util.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3846,6 +3909,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
+    },
     "BouncyCastle.NetCore/1.8.3": {
       "type": "package",
       "serviceable": true,
@@ -3950,6 +4027,13 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Scrutor/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jm20IqEucafr0e0QWCQLJods+ECJOUZX1KI5qsJoiHGzZimOqJNFLPeqieNicc+0DPSnStCMspgDOa/6Vab70A==",
+      "path": "scrutor/3.1.0",
+      "hashPath": "scrutor.3.1.0.nupkg.sha512"
     },
     "SSH.NET/2016.1.0": {
       "type": "package",
@@ -4087,12 +4171,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "HeyTom.DomainCore/1.0.0": {
+    "HeyTom.Infra.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "HeyTom.Infr/1.0.0": {
+    "HeyTom.Infra.Ioc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeyTom.Infra.Util/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

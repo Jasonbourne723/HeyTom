@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using HeyTom.Domain.Model;
-using HeyTom.DomainCore.Interface;
+﻿using System.Collections.Generic;
+using HeyTom.Domain.Models;
 
 namespace HeyTom.Domain.Interface
 {
-	public interface ICatRepository :IRepository<Cat>
+	public interface ICatRepository : IRepository<Cat>
 	{
 		List<Cat> GetByVipId(long vipId);
 	}

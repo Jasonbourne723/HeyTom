@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using HeyTom.Domain.Interface;
-using HeyTom.Domain.Model;
+using HeyTom.Domain.Models;
 
-namespace HeyTom.Infr
+namespace HeyTom.Infra.Implementtation
 {
 	public class ExtendBannerRepository : IExtendBannerRepository
 	{

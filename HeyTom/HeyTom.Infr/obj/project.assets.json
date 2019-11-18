@@ -1330,7 +1330,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0",
+          "HeyTom.Infra.Util": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "compile": {
@@ -1340,14 +1340,14 @@
           "bin/placeholder/HeyTom.Domain.dll": {}
         }
       },
-      "HeyTom.DomainCore/1.0.0": {
+      "HeyTom.Infra.Util/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/HeyTom.DomainCore.dll": {}
+          "bin/placeholder/HeyTom.Infra.Util.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HeyTom.DomainCore.dll": {}
+          "bin/placeholder/HeyTom.Infra.Util.dll": {}
         }
       }
     }
@@ -5105,15 +5105,16 @@
       "path": "../HeyTom.Domain/HeyTom.Domain.csproj",
       "msbuildProject": "../HeyTom.Domain/HeyTom.Domain.csproj"
     },
-    "HeyTom.DomainCore/1.0.0": {
+    "HeyTom.Infra.Util/1.0.0": {
       "type": "project",
-      "path": "../HeyTom.DomainCore/HeyTom.DomainCore.csproj",
-      "msbuildProject": "../HeyTom.DomainCore/HeyTom.DomainCore.csproj"
+      "path": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj",
+      "msbuildProject": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "HeyTom.Domain >= 1.0.0",
+      "HeyTom.Infra.Util >= 1.0.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.18",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -5125,9 +5126,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infr.csproj",
-      "projectName": "HeyTom.Infr",
-      "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infr.csproj",
+      "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infra.Data.csproj",
+      "projectName": "HeyTom.Infra.Data",
+      "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\CESAAS\\.nuget\\packages\\",
       "outputPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\obj\\",
       "projectStyle": "PackageReference",
@@ -5152,6 +5153,9 @@
           "projectReferences": {
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj"
+            },
+            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj": {
+              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj"
             }
           }
         }

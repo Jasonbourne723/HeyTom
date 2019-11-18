@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using HeyTom.Application.Interface;
 using HeyTom.Domain.Interface;
-using HeyTom.Domain.Model;
+using HeyTom.Domain.Models;
 
 namespace HeyTom.Application.Implementation
 {

@@ -7,10 +7,8 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.UI.Web.Views.
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.UI.Web.Views.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Application.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Domain.dll
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infr.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Application.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Domain.pdb
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infr.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.csprojAssemblyReference.cache
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.csproj.CoreCompileInputs.cache
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.RazorAssemblyInfo.cache
@@ -36,6 +34,10 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.csproj
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\HeyTom.UI.Web.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\Razor\Views\Community\Community.g.cshtml.cs
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.DomainCore.dll
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.DomainCore.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\obj\Debug\netcoreapp2.2\Razor\Views\Vip\VipPersonalInfo.g.cshtml.cs
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infra.Data.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infra.Ioc.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infra.Ioc.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infra.Data.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infra.Util.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom\bin\Debug\netcoreapp2.2\HeyTom.Infra.Util.pdb

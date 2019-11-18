@@ -1,9 +1,9 @@
 ﻿
 @{
-    @using HeyTom.Domain.Model;
+    @using HeyTom.Domain.Models;
+    @using HeyTom.Application.ViewModels;
     ViewData["Title"] = "VipPersonalInfo";
-    var vip = (Vip)ViewData["vip"];
-    var cats = (List<Cat>)ViewData["cats"];
+    var vip = (VipVO)ViewData["vip"];
     var photos = (List<Photo>)ViewData["photos"];
     var simpleSays = (List<SimpleSay>)ViewData["simpleSays"];
 }
@@ -14,9 +14,9 @@
     <img src="@vip.Icon" width="100" />
     <p>昵称：@vip.Name</p>
     <p>@vip.Mark</p>
-    @if (cats != null && cats.Count > 0)
+    @if (vip.Cats != null && vip.Cats.Count > 0)
     {
-        foreach (var item in cats)
+        foreach (var item in vip.Cats)
         {
             <div>
                 <img src="@item.Icon" width="100" />
@@ -51,13 +51,6 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <p>@item.Body</p>
-                            @if (item.Photos != null && item.Photos.Count > 0)
-                            {
-                                foreach (var photo in item.Photos)
-                                {
-                                    <img src="@photo.PhotoUrl" width="150" style="margin:initial;" />
-                                }
-                            }
                             <p style="float:right">@item.CreateTime</p>
                         </div>
                     </div>

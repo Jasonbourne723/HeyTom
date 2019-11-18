@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using HeyTom.Application.Interface;
-using HeyTom.Domain.Model;
+using HeyTom.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HeyTom.UI.Web.Controllers

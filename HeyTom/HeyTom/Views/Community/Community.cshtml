@@ -1,8 +1,9 @@
 ﻿
 @{
-    @using HeyTom.Domain.Model;
+    @using HeyTom.Application.ViewModels;
+    @using HeyTom.Domain.Models;
     ViewData["Title"] = "Community";
-    var newVips = (List<Vip>)ViewData["NewVips"];
+    var newVips = (List<SimpleVipVO>)ViewData["NewVips"];
 }
 
 <h3>Welcome to new cats</h3>
@@ -17,15 +18,12 @@
                 {
                     <div class="col-md-4">
                         <div class="thumbnail">
-                            <a href="Vip/PersonalInfo?vipId=@newVips[j].VipId">
+                            <a href="Vip/PersonalInfo?vipId=@newVips[j].Id">
                                 <img src=@newVips[j].Icon  />
                             </a>
                             <div class="caption">
-                                <h6>@newVips[j].Name</h6>
-                                <h6>@newVips[j].Birthday</h6>
-                                <h6>@newVips[j].Sex</h6>
+                                <h6>@newVips[j].NickName</h6>
                             </div>
-
                         </div>
                     </div>
                 }

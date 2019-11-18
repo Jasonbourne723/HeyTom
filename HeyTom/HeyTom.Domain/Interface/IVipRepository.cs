@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using HeyTom.Domain.Model;
-using HeyTom.DomainCore.Interface;
+﻿using System.Collections.Generic;
+using HeyTom.Domain.Models;
 
 namespace HeyTom.Domain.Interface
 {
-	public interface IVipRepository :IRepository<Vip>
+	public interface IVipRepository : IRepository<Vip>
 	{
 		List<Vip> GetNewVips(int count);
 
-		Vip GetByVipId(long vipId);
 	}
 }

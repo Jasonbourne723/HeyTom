@@ -10,5 +10,3 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infr\obj\Debug\netstandard2.0\HeyTom.Infr.As
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infr\obj\Debug\netstandard2.0\HeyTom.Infr.csproj.CopyComplete
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infr\obj\Debug\netstandard2.0\HeyTom.Infr.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infr\obj\Debug\netstandard2.0\HeyTom.Infr.pdb
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infr\bin\Debug\netstandard2.0\HeyTom.DomainCore.dll
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infr\bin\Debug\netstandard2.0\HeyTom.DomainCore.pdb

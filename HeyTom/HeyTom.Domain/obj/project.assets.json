@@ -1326,14 +1326,14 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "HeyTom.DomainCore/1.0.0": {
+      "HeyTom.Infra.Util/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/HeyTom.DomainCore.dll": {}
+          "bin/placeholder/HeyTom.Infra.Util.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HeyTom.DomainCore.dll": {}
+          "bin/placeholder/HeyTom.Infra.Util.dll": {}
         }
       }
     }
@@ -5086,15 +5086,15 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "HeyTom.DomainCore/1.0.0": {
+    "HeyTom.Infra.Util/1.0.0": {
       "type": "project",
-      "path": "../HeyTom.DomainCore/HeyTom.DomainCore.csproj",
-      "msbuildProject": "../HeyTom.DomainCore/HeyTom.DomainCore.csproj"
+      "path": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj",
+      "msbuildProject": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "HeyTom.DomainCore >= 1.0.0",
+      "HeyTom.Infra.Util >= 1.0.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.18",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -5131,8 +5131,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.DomainCore\\HeyTom.DomainCore.csproj": {
-              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.DomainCore\\HeyTom.DomainCore.csproj"
+            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj": {
+              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj"
             }
           }
         }

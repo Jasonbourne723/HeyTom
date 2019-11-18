@@ -1,49 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using HeyTom.Application.Interface;
+﻿using System.Linq;
 using HeyTom.Domain.Interface;
 using Microsoft.AspNetCore.Mvc;
+using HeyTom.Domain.Models;
+using HeyTom.Application.Interface;
 
 namespace HeyTom.UI.Web.Controllers
 {
 	[Route("[Controller]")]
 	public class VipController : Controller
-    {
-		private readonly IVipRepository _vipService;
+	{
+		private readonly IVipService _vipService;
 		private readonly ICatRepository _catRepository;
 		private readonly IPhotoRepository _photoRepository;
 		private readonly ISimpleSayRepository _simpleSayRepository;
 
-		public VipController(IVipRepository vipService,
+		public VipController(IVipService vipService,
 									ICatRepository catRepository,
 									IPhotoRepository photoRepository,
 									ISimpleSayRepository simpleSayRepository)
 		{
-			this._vipService = vipService;
-			this._catRepository = catRepository;
-			this._photoRepository = photoRepository;
-			this._simpleSayRepository = simpleSayRepository;
+			_vipService = vipService;
+			_catRepository = catRepository;
+			_photoRepository = photoRepository;
+			_simpleSayRepository = simpleSayRepository;
 		}
 
 		[Route("[Action]")]
-        public IActionResult PersonalInfo(long vipId)
-        {
-			var vip = _vipService.GetByVipId(vipId);
-			var cats = _catRepository.GetByVipId(vipId);
+		public IActionResult PersonalInfo(long vipId)
+		{
+			var vip = _vipService.GetVipById(vipId);
 			var photos = _photoRepository.GetByVipId(vipId);
 			var simpleSays = _simpleSayRepository.GetByVipId(vipId);
 			simpleSays?.ForEach(ea =>
 			{
-				ea.Photos = photos?.FindAll(x=>x.SimpleSayId == ea.SimpleSayId);
+				//ea.Photos = photos?.FindAll(x => x.SimpleSayId == ea.Id);
 			});
-		
+
 			ViewData["vip"] = vip;
-			ViewData["cats"] = cats;
 			ViewData["photos"] = photos;
 			ViewData["simpleSays"] = simpleSays;
 			return View("VipPersonalInfo");
-        }
-    }
+		}
+	}
 }

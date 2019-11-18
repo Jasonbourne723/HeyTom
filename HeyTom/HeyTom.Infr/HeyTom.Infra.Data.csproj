@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeyTom.Domain\HeyTom.Domain.csproj" />
+    <ProjectReference Include="..\HeyTom.Infra.Util\HeyTom.Infra.Util.csproj" />
+  </ItemGroup>
+
+</Project>

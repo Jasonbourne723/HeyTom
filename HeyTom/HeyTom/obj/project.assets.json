@@ -2,6 +2,32 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "AutoMapper/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "BouncyCastle.NetCore/1.8.3": {
         "type": "package",
         "dependencies": {
@@ -3178,6 +3204,19 @@
           }
         }
       },
+      "Scrutor/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyModel": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Scrutor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Scrutor.dll": {}
+        }
+      },
       "SSH.NET/2016.1.0": {
         "type": "package",
         "dependencies": {
@@ -4982,6 +5021,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "AutoMapper": "9.0.0",
           "HeyTom.Domain": "1.0.0"
         },
         "compile": {
@@ -4995,7 +5035,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "HeyTom.DomainCore": "1.0.0",
+          "HeyTom.Infra.Util": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "compile": {
@@ -5005,33 +5045,80 @@
           "bin/placeholder/HeyTom.Domain.dll": {}
         }
       },
-      "HeyTom.DomainCore/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/HeyTom.DomainCore.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/HeyTom.DomainCore.dll": {}
-        }
-      },
-      "HeyTom.Infr/1.0.0": {
+      "HeyTom.Infra.Data/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "HeyTom.Domain": "1.0.0",
+          "HeyTom.Infra.Util": "1.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.18"
         },
         "compile": {
-          "bin/placeholder/HeyTom.Infr.dll": {}
+          "bin/placeholder/HeyTom.Infra.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/HeyTom.Infr.dll": {}
+          "bin/placeholder/HeyTom.Infra.Data.dll": {}
+        }
+      },
+      "HeyTom.Infra.Ioc/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "HeyTom.Application": "1.0.0",
+          "HeyTom.Infra.Data": "1.0.0",
+          "Scrutor": "3.1.0"
+        },
+        "compile": {
+          "bin/placeholder/HeyTom.Infra.Ioc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HeyTom.Infra.Ioc.dll": {}
+        }
+      },
+      "HeyTom.Infra.Util/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HeyTom.Infra.Util.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HeyTom.Infra.Util.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "AutoMapper/9.0.0": {
+      "sha512": "xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "type": "package",
+      "path": "automapper/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.9.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net461/AutoMapper.dll",
+        "lib/net461/AutoMapper.pdb",
+        "lib/net461/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.pdb",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "sha512": "szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
     "BouncyCastle.NetCore/1.8.3": {
       "sha512": "jAy3uHN1U9DpoT/TgLqDTEhlccn/4doOVxhSmmNsnoSsGfHT9Lwr634ac9D0YFujAhNw61nWF4UIpHyzv0aQww==",
       "type": "package",
@@ -8773,6 +8860,23 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Scrutor/3.1.0": {
+      "sha512": "jm20IqEucafr0e0QWCQLJods+ECJOUZX1KI5qsJoiHGzZimOqJNFLPeqieNicc+0DPSnStCMspgDOa/6Vab70A==",
+      "type": "package",
+      "path": "scrutor/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Scrutor.dll",
+        "lib/net461/Scrutor.pdb",
+        "lib/net461/Scrutor.xml",
+        "lib/netstandard2.0/Scrutor.dll",
+        "lib/netstandard2.0/Scrutor.pdb",
+        "lib/netstandard2.0/Scrutor.xml",
+        "scrutor.3.1.0.nupkg.sha512",
+        "scrutor.nuspec"
       ]
     },
     "SSH.NET/2016.1.0": {
@@ -13706,26 +13810,33 @@
       "path": "../HeyTom.Domain/HeyTom.Domain.csproj",
       "msbuildProject": "../HeyTom.Domain/HeyTom.Domain.csproj"
     },
-    "HeyTom.DomainCore/1.0.0": {
+    "HeyTom.Infra.Data/1.0.0": {
       "type": "project",
-      "path": "../HeyTom.DomainCore/HeyTom.DomainCore.csproj",
-      "msbuildProject": "../HeyTom.DomainCore/HeyTom.DomainCore.csproj"
+      "path": "../HeyTom.Infr/HeyTom.Infra.Data.csproj",
+      "msbuildProject": "../HeyTom.Infr/HeyTom.Infra.Data.csproj"
     },
-    "HeyTom.Infr/1.0.0": {
+    "HeyTom.Infra.Ioc/1.0.0": {
       "type": "project",
-      "path": "../HeyTom.Infr/HeyTom.Infr.csproj",
-      "msbuildProject": "../HeyTom.Infr/HeyTom.Infr.csproj"
+      "path": "../DependencyInjection/HeyTom.Infra.Ioc.csproj",
+      "msbuildProject": "../DependencyInjection/HeyTom.Infra.Ioc.csproj"
+    },
+    "HeyTom.Infra.Util/1.0.0": {
+      "type": "project",
+      "path": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj",
+      "msbuildProject": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "HeyTom.Application >= 1.0.0",
       "HeyTom.Domain >= 1.0.0",
-      "HeyTom.Infr >= 1.0.0",
+      "HeyTom.Infra.Data >= 1.0.0",
+      "HeyTom.Infra.Ioc >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
+      "Scrutor >= 3.1.0"
     ]
   },
   "packageFolders": {
@@ -13760,14 +13871,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\DependencyInjection\\HeyTom.Infra.Ioc.csproj": {
+              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\DependencyInjection\\HeyTom.Infra.Ioc.csproj"
+            },
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj"
             },
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj"
             },
-            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infr.csproj": {
-              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infr.csproj"
+            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infra.Data.csproj": {
+              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infra.Data.csproj"
             }
           }
         }
@@ -13801,6 +13915,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.3, )"
+          },
+          "Scrutor": {
+            "target": "Package",
+            "version": "[3.1.0, )"
           }
         },
         "imports": [
