@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "71262eba45904efe103caeb23f5cf6872622346d"
+    "signature": "38ca14c8abd7bb7d0870e84cd7e80f2d37d7d12e"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,6 +12,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "HeyTom.Application": "1.0.0",
           "HeyTom.Infra.Data": "1.0.0",
+          "HeyTom.Infra.MessageQueue": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "Scrutor": "3.1.0"
         },
@@ -335,6 +336,14 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.1.19813"
+          }
+        }
+      },
+      "RabbitMQ.Client/5.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.2.0"
           }
         }
       },
@@ -1245,6 +1254,15 @@
           "HeyTom.Infra.Data.dll": {}
         }
       },
+      "HeyTom.Infra.MessageQueue/1.0.0": {
+        "dependencies": {
+          "HeyTom.Infra.Util": "1.0.0",
+          "RabbitMQ.Client": "5.1.2"
+        },
+        "runtime": {
+          "HeyTom.Infra.MessageQueue.dll": {}
+        }
+      },
       "HeyTom.Infra.Util/1.0.0": {
         "runtime": {
           "HeyTom.Infra.Util.dll": {}
@@ -1453,6 +1471,13 @@
       "sha512": "sha512-U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "path": "newtonsoft.json/9.0.1",
       "hashPath": "newtonsoft.json.9.0.1.nupkg.sha512"
+    },
+    "RabbitMQ.Client/5.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xhj+un0pw4N7h37SZWptxl/NEv7f1RLHwZhXjqzkCm3w3IdbFJh+HjVyPaciD848BUYLGoEQzadx90nShsbs4Q==",
+      "path": "rabbitmq.client/5.1.2",
+      "hashPath": "rabbitmq.client.5.1.2.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
@@ -1969,6 +1994,11 @@
       "sha512": ""
     },
     "HeyTom.Infra.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeyTom.Infra.MessageQueue/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

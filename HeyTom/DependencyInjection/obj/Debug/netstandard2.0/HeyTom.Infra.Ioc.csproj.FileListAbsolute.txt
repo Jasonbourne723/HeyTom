@@ -16,3 +16,5 @@ G:\MyCode\hey,Tom\mvc\HeyTom\DependencyInjection\obj\Debug\netstandard2.0\HeyTom
 G:\MyCode\hey,Tom\mvc\HeyTom\DependencyInjection\obj\Debug\netstandard2.0\HeyTom.Infra.Ioc.pdb
 G:\MyCode\hey,Tom\mvc\HeyTom\DependencyInjection\bin\Debug\netstandard2.0\HeyTom.Infra.Util.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\DependencyInjection\bin\Debug\netstandard2.0\HeyTom.Infra.Util.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\DependencyInjection\bin\Debug\netstandard2.0\HeyTom.Infra.MessageQueue.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\DependencyInjection\bin\Debug\netstandard2.0\HeyTom.Infra.MessageQueue.pdb

@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HeyTom.Application\HeyTom.Application.csproj" />
+    <ProjectReference Include="..\HeyTom.Infra.MessageQueue\HeyTom.Infra.MessageQueue.csproj" />
     <ProjectReference Include="..\HeyTom.Infr\HeyTom.Infra.Data.csproj" />
   </ItemGroup>
 

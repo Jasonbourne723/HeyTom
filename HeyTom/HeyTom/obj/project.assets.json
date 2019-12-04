@@ -2976,6 +2976,15 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "RabbitMQ.Client/5.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -5067,6 +5076,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "HeyTom.Application": "1.0.0",
           "HeyTom.Infra.Data": "1.0.0",
+          "HeyTom.Infra.MessageQueue": "1.0.0",
           "Scrutor": "3.1.0"
         },
         "compile": {
@@ -5074,6 +5084,20 @@
         },
         "runtime": {
           "bin/placeholder/HeyTom.Infra.Ioc.dll": {}
+        }
+      },
+      "HeyTom.Infra.MessageQueue/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "HeyTom.Infra.Util": "1.0.0",
+          "RabbitMQ.Client": "5.1.2"
+        },
+        "compile": {
+          "bin/placeholder/HeyTom.Infra.MessageQueue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HeyTom.Infra.MessageQueue.dll": {}
         }
       },
       "HeyTom.Infra.Util/1.0.0": {
@@ -8569,6 +8593,23 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "RabbitMQ.Client/5.1.2": {
+      "sha512": "Xhj+un0pw4N7h37SZWptxl/NEv7f1RLHwZhXjqzkCm3w3IdbFJh+HjVyPaciD848BUYLGoEQzadx90nShsbs4Q==",
+      "type": "package",
+      "path": "rabbitmq.client/5.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/net451/RabbitMQ.Client.xml",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.5.1.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -13819,6 +13860,11 @@
       "type": "project",
       "path": "../DependencyInjection/HeyTom.Infra.Ioc.csproj",
       "msbuildProject": "../DependencyInjection/HeyTom.Infra.Ioc.csproj"
+    },
+    "HeyTom.Infra.MessageQueue/1.0.0": {
+      "type": "project",
+      "path": "../HeyTom.Infra.MessageQueue/HeyTom.Infra.MessageQueue.csproj",
+      "msbuildProject": "../HeyTom.Infra.MessageQueue/HeyTom.Infra.MessageQueue.csproj"
     },
     "HeyTom.Infra.Util/1.0.0": {
       "type": "project",

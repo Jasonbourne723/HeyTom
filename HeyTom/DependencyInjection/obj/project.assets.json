@@ -373,6 +373,15 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "RabbitMQ.Client/5.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1531,6 +1540,20 @@
           "bin/placeholder/HeyTom.Infra.Data.dll": {}
         }
       },
+      "HeyTom.Infra.MessageQueue/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "HeyTom.Infra.Util": "1.0.0",
+          "RabbitMQ.Client": "5.1.2"
+        },
+        "compile": {
+          "bin/placeholder/HeyTom.Infra.MessageQueue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HeyTom.Infra.MessageQueue.dll": {}
+        }
+      },
       "HeyTom.Infra.Util/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2128,6 +2151,23 @@
         "newtonsoft.json.9.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "RabbitMQ.Client/5.1.2": {
+      "sha512": "Xhj+un0pw4N7h37SZWptxl/NEv7f1RLHwZhXjqzkCm3w3IdbFJh+HjVyPaciD848BUYLGoEQzadx90nShsbs4Q==",
+      "type": "package",
+      "path": "rabbitmq.client/5.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/net451/RabbitMQ.Client.xml",
+        "lib/netstandard1.5/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.5.1.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -5664,6 +5704,11 @@
       "path": "../HeyTom.Infr/HeyTom.Infra.Data.csproj",
       "msbuildProject": "../HeyTom.Infr/HeyTom.Infra.Data.csproj"
     },
+    "HeyTom.Infra.MessageQueue/1.0.0": {
+      "type": "project",
+      "path": "../HeyTom.Infra.MessageQueue/HeyTom.Infra.MessageQueue.csproj",
+      "msbuildProject": "../HeyTom.Infra.MessageQueue/HeyTom.Infra.MessageQueue.csproj"
+    },
     "HeyTom.Infra.Util/1.0.0": {
       "type": "project",
       "path": "../HeyTom.Infra.Util/HeyTom.Infra.Util.csproj",
@@ -5675,6 +5720,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
       "HeyTom.Application >= 1.0.0",
       "HeyTom.Infra.Data >= 1.0.0",
+      "HeyTom.Infra.MessageQueue >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Scrutor >= 3.1.0"
     ]
@@ -5713,6 +5759,9 @@
           "projectReferences": {
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj"
+            },
+            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.MessageQueue\\HeyTom.Infra.MessageQueue.csproj": {
+              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.MessageQueue\\HeyTom.Infra.MessageQueue.csproj"
             },
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infra.Data.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infr\\HeyTom.Infra.Data.csproj"

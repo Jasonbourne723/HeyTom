@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "0199fef2e642d3170330a3f2f1db1abc0a1f8290"
+    "signature": "1148d5483b5fcba75cdb174587d1bb3050414571"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "HeyTom.Application": "1.0.0",
           "HeyTom.Infra.Ioc": "1.0.0",
+          "HeyTom.Infra.MessageQueue": "1.0.0",
           "HeyTom.Infra.Util": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -304,6 +305,17 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "RabbitMQ.Client/5.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
         }
       },
       "Scrutor/3.1.0": {
@@ -737,6 +749,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "HeyTom.Application": "1.0.0",
           "HeyTom.Infra.Data": "1.0.0",
+          "HeyTom.Infra.MessageQueue": "1.0.0",
           "Scrutor": "3.1.0"
         },
         "runtime": {
@@ -744,6 +757,18 @@
         },
         "compile": {
           "HeyTom.Infra.Ioc.dll": {}
+        }
+      },
+      "HeyTom.Infra.MessageQueue/1.0.0": {
+        "dependencies": {
+          "HeyTom.Infra.Util": "1.0.0",
+          "RabbitMQ.Client": "5.1.2"
+        },
+        "runtime": {
+          "HeyTom.Infra.MessageQueue.dll": {}
+        },
+        "compile": {
+          "HeyTom.Infra.MessageQueue.dll": {}
         }
       },
       "HeyTom.Infra.Util/1.0.0": {
@@ -4078,6 +4103,13 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/5.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xhj+un0pw4N7h37SZWptxl/NEv7f1RLHwZhXjqzkCm3w3IdbFJh+HjVyPaciD848BUYLGoEQzadx90nShsbs4Q==",
+      "path": "rabbitmq.client/5.1.2",
+      "hashPath": "rabbitmq.client.5.1.2.nupkg.sha512"
+    },
     "Scrutor/3.1.0": {
       "type": "package",
       "serviceable": true,
@@ -4248,6 +4280,11 @@
       "sha512": ""
     },
     "HeyTom.Infra.Ioc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HeyTom.Infra.MessageQueue/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

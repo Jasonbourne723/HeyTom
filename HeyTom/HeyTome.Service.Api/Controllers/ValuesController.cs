@@ -2,19 +2,52 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HeyTom.Infra.MessageQueue;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HeyTome.Service.Api.Controllers
 {
+	[RabbitMq("ExChangeTest1","queueTest1",routingKey:"nihao")]
+	public class Student
+	{
+		public string name { get; set; }
+
+		public int  age { get; set; }
+	}
+
+	[RabbitMq("ExChangeTest2", "queueTest2", "fanout",routingKey: "nihao")]
+	public class Student1
+	{
+		public string name { get; set; }
+
+		public int age { get; set; }
+	}
+
 	[Route("api/[controller]")]
 	[ApiController]
 	public class ValuesController : ControllerBase
 	{
+		private readonly IRabbitMqService _rabbitMqService;
+
+		public ValuesController(IRabbitMqService rabbitMqService)
+		{
+			this._rabbitMqService = rabbitMqService;
+		}
+
 		// GET api/values
 		[HttpGet]
 		public ActionResult<string> Get()
 		{
-			return "123";
+			var test = "aaa";
+			_rabbitMqService.Publish(new Student()
+			{
+				age = 1,
+				name = "lilei"
+			});
+			_rabbitMqService.Subscribe<Student>(ea => {
+				test = ea.name + ea.age;
+			});
+			return test;
 		}
 
 		// GET api/values/5

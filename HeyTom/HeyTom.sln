@@ -25,11 +25,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{155B6E2B-85DB-4CAC-98BC-FCEA99CFC2C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyTom.Infra.Ioc", "DependencyInjection\HeyTom.Infra.Ioc.csproj", "{573B374A-ACDB-4EFC-9590-50425199058A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyTom.Infra.Ioc", "DependencyInjection\HeyTom.Infra.Ioc.csproj", "{573B374A-ACDB-4EFC-9590-50425199058A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyTom.Infra.Util", "HeyTom.Infra.Util\HeyTom.Infra.Util.csproj", "{78A8B0B0-C088-4BA6-9242-8C93F81DD3CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyTom.Infra.Util", "HeyTom.Infra.Util\HeyTom.Infra.Util.csproj", "{78A8B0B0-C088-4BA6-9242-8C93F81DD3CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyTome.Service.Api", "HeyTome.Service.Api\HeyTome.Service.Api.csproj", "{0D34C5F0-AA80-45BE-8F05-BE76F00CF1D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeyTome.Service.Api", "HeyTome.Service.Api\HeyTome.Service.Api.csproj", "{0D34C5F0-AA80-45BE-8F05-BE76F00CF1D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyTom.Infra.MessageQueue", "HeyTom.Infra.MessageQueue\HeyTom.Infra.MessageQueue.csproj", "{B5F9FB16-0B74-469C-8AD7-BF6D228042A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{0D34C5F0-AA80-45BE-8F05-BE76F00CF1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D34C5F0-AA80-45BE-8F05-BE76F00CF1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D34C5F0-AA80-45BE-8F05-BE76F00CF1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F9FB16-0B74-469C-8AD7-BF6D228042A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F9FB16-0B74-469C-8AD7-BF6D228042A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F9FB16-0B74-469C-8AD7-BF6D228042A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F9FB16-0B74-469C-8AD7-BF6D228042A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{573B374A-ACDB-4EFC-9590-50425199058A} = {155B6E2B-85DB-4CAC-98BC-FCEA99CFC2C6}
 		{78A8B0B0-C088-4BA6-9242-8C93F81DD3CF} = {155B6E2B-85DB-4CAC-98BC-FCEA99CFC2C6}
 		{0D34C5F0-AA80-45BE-8F05-BE76F00CF1D4} = {9F461993-8F28-4B74-831E-0EFB11A5170B}
+		{B5F9FB16-0B74-469C-8AD7-BF6D228042A1} = {AEA847D3-FB54-41B7-9004-61598DB1F385}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2800F00C-4D20-4EAC-BF76-0AA9D397F3E7}

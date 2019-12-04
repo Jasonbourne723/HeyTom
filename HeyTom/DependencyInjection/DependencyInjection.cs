@@ -2,6 +2,7 @@
 using System.Linq;
 using HeyTom.Application.Implementation;
 using HeyTom.Infra.Implementtation;
+using HeyTom.Infra.MessageQueue;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HeyTom.Infraa.Ioc
@@ -10,6 +11,7 @@ namespace HeyTom.Infraa.Ioc
 	{
 		public static IServiceCollection AddDependencyInjection(this IServiceCollection services)
 		{
+			services.AddSingleton<IRabbitMqService, RabbitMqService>();
 			return services.Scan(scan => scan
 							.FromAssemblyOf<ExtendBannerRepository>()
 							.AddClasses(classes => classes.Where(x => x.Name.EndsWith("Repository", StringComparison.OrdinalIgnoreCase)))
