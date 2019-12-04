@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HeyTom.Infra.MessageQueue;
+using HeyTom.Infra.MessageQueue.RabbitMq;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HeyTome.Service.Api.Controllers

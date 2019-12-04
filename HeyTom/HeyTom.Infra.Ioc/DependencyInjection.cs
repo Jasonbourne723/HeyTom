@@ -3,6 +3,7 @@ using System.Linq;
 using HeyTom.Application.Implementation;
 using HeyTom.Infra.Implementtation;
 using HeyTom.Infra.MessageQueue;
+using HeyTom.Infra.MessageQueue.RabbitMq;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HeyTom.Infraa.Ioc

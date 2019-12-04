@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RabbitMq\" />
+    <Folder Include="Kafka\" />
   </ItemGroup>
 
 </Project>
