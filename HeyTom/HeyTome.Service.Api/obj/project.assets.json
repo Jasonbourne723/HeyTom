@@ -13935,13 +13935,13 @@
     },
     "HeyTom.Infra.Data/1.0.0": {
       "type": "project",
-      "path": "../HeyTom.Infr/HeyTom.Infra.Data.csproj",
-      "msbuildProject": "../HeyTom.Infr/HeyTom.Infra.Data.csproj"
+      "path": "../HeyTom.Infra.Data/HeyTom.Infra.Data.csproj",
+      "msbuildProject": "../HeyTom.Infra.Data/HeyTom.Infra.Data.csproj"
     },
     "HeyTom.Infra.Ioc/1.0.0": {
       "type": "project",
-      "path": "../DependencyInjection/HeyTom.Infra.Ioc.csproj",
-      "msbuildProject": "../DependencyInjection/HeyTom.Infra.Ioc.csproj"
+      "path": "../HeyTom.Infra.Ioc/HeyTom.Infra.Ioc.csproj",
+      "msbuildProject": "../HeyTom.Infra.Ioc/HeyTom.Infra.Ioc.csproj"
     },
     "HeyTom.Infra.MessageQueue/1.0.0": {
       "type": "project",
@@ -14001,11 +14001,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\DependencyInjection\\HeyTom.Infra.Ioc.csproj": {
-              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\DependencyInjection\\HeyTom.Infra.Ioc.csproj"
-            },
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj"
+            },
+            "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Ioc\\HeyTom.Infra.Ioc.csproj": {
+              "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Ioc\\HeyTom.Infra.Ioc.csproj"
             },
             "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.MessageQueue\\HeyTom.Infra.MessageQueue.csproj": {
               "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.MessageQueue\\HeyTom.Infra.MessageQueue.csproj"

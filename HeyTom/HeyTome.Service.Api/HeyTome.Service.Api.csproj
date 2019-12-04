@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DependencyInjection\HeyTom.Infra.Ioc.csproj" />
     <ProjectReference Include="..\HeyTom.Application\HeyTom.Application.csproj" />
+    <ProjectReference Include="..\HeyTom.Infra.Ioc\HeyTom.Infra.Ioc.csproj" />
     <ProjectReference Include="..\HeyTom.Infra.MessageQueue\HeyTom.Infra.MessageQueue.csproj" />
     <ProjectReference Include="..\HeyTom.Infra.Util\HeyTom.Infra.Util.csproj" />
   </ItemGroup>
