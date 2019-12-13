@@ -14,3 +14,5 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.MessageQueue\obj\Debug\netstandard2.0\
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.MessageQueue\obj\Debug\netstandard2.0\HeyTom.Infra.MessageQueue.csproj.CopyComplete
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.MessageQueue\obj\Debug\netstandard2.0\HeyTom.Infra.MessageQueue.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.MessageQueue\obj\Debug\netstandard2.0\HeyTom.Infra.MessageQueue.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.MessageQueue\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.MessageQueue\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.xml

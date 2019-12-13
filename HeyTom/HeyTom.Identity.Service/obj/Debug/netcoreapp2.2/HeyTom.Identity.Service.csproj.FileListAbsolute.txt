@@ -1,0 +1,14 @@
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\bin\Debug\netcoreapp2.2\HeyTom.Identity.Service.deps.json
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\bin\Debug\netcoreapp2.2\HeyTom.Identity.Service.runtimeconfig.json
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\bin\Debug\netcoreapp2.2\HeyTom.Identity.Service.runtimeconfig.dev.json
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\bin\Debug\netcoreapp2.2\HeyTom.Identity.Service.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.csprojAssemblyReference.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.csproj.CoreCompileInputs.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.RazorAssemblyInfo.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.RazorAssemblyInfo.cs
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.AssemblyInfoInputs.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.AssemblyInfo.cs
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.RazorTargetAssemblyInfo.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\bin\Debug\netcoreapp2.2\HeyTom.Identity.Service.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Identity.Service\obj\Debug\netcoreapp2.2\HeyTom.Identity.Service.pdb

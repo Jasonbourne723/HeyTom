@@ -4,14 +4,17 @@ using HeyTom.Infra.Util;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace HeyTome.Service.Api.Controllers
+namespace HeyTom.Infra.Util
 {
 	[Route("api/[controller]")]
 	public abstract class BaseController : ControllerBase
 	{
 		public BaseController()
 		{
+			_authType = true;
 		}
+
+		public bool _authType { get; set; }
 
 		protected IActionResult Wrapper(ref ResultModel result, Action action, bool isVaild)
 		{

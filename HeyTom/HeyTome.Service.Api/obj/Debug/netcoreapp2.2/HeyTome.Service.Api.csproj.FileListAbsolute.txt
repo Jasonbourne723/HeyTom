@@ -26,3 +26,9 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\obj\Debug\netcoreapp2.2\HeyTome
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\obj\Debug\netcoreapp2.2\HeyTome.Service.Api.csproj.CopyComplete
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\obj\Debug\netcoreapp2.2\HeyTome.Service.Api.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\obj\Debug\netcoreapp2.2\HeyTome.Service.Api.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\bin\Debug\netcoreapp2.2\HeyTom.Infra.Token.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\bin\Debug\netcoreapp2.2\HeyTom.Infra.Token.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\bin\Debug\netcoreapp2.2\HeyTom.Infra.Cache.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\bin\Debug\netcoreapp2.2\HeyTom.Infra.Cache.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\bin\Debug\netcoreapp2.2\HeyTom.Infra.AliYunOss.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTome.Service.Api\bin\Debug\netcoreapp2.2\HeyTom.Infra.AliYunOss.pdb

@@ -38,3 +38,5 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Ioc\obj\Debug\netstandard2.0\HeyTom.In
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Ioc\obj\Debug\netstandard2.0\HeyTom.Infra.Ioc.csproj.CopyComplete
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Ioc\obj\Debug\netstandard2.0\HeyTom.Infra.Ioc.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Ioc\obj\Debug\netstandard2.0\HeyTom.Infra.Ioc.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Ioc\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Ioc\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.xml

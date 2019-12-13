@@ -24,5 +24,13 @@ namespace HeyTom.UI.Web.Controllers
 			}
 			return Ok(200);
 		}
+
+		[Route("[action]")]
+		public IActionResult GitHub()
+		{
+			var clientId = "f1f3420ef57e2d2a089d";
+			var clientSecret = "4c25c6af2c4ac119b606ea18445f5745506d87cb";
+			return Redirect("https://github.com/login/oauth/authorize?client_id=f1f3420ef57e2d2a089d&redirect_uri=http://localhost:62526/oath/callback");
+		}
 	}
 }

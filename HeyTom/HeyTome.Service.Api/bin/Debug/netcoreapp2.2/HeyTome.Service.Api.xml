@@ -16,5 +16,23 @@
             <param name="viewParam"></param>
             <returns></returns>
         </member>
+        <member name="F:HeyTom.Infra.Token.TokenAuth._next">
+            <summary>
+            http委托
+            </summary>
+        </member>
+        <member name="M:HeyTom.Infra.Token.TokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:HeyTom.Infra.Token.TokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            验证授权
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

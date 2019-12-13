@@ -12,3 +12,7 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\obj\Debug\netstandard2.0\HeyTom.
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\obj\Debug\netstandard2.0\HeyTom.Application.csproj.CopyComplete
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\obj\Debug\netstandard2.0\HeyTom.Application.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\obj\Debug\netstandard2.0\HeyTom.Application.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\bin\Debug\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.xml
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Application\bin\Debug\netstandard2.0\Newtonsoft.Json.xml

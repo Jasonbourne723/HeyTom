@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using HeyTom.Infra.MessageQueue;
 using HeyTom.Infra.MessageQueue.RabbitMq;
+using HeyTom.Infra.Token;
+using HeyTom.Infra.Util;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HeyTome.Service.Api.Controllers
@@ -25,29 +28,32 @@ namespace HeyTome.Service.Api.Controllers
 	}
 
 	[Route("api/[controller]")]
-	[ApiController]
-	public class ValuesController : ControllerBase
+	public class ValuesController : BaseController
 	{
-		private readonly IRabbitMqService _rabbitMqService;
+		//private readonly IRabbitMqService _rabbitMqService;
 
-		public ValuesController(IRabbitMqService rabbitMqService)
+		public ValuesController(
+			//IRabbitMqService rabbitMqService
+			)
 		{
-			this._rabbitMqService = rabbitMqService;
+			//this._rabbitMqService = rabbitMqService;
+		}
+
+		[Route("[action]")]
+		public ActionResult<string> Token()
+		{
+			return  TokenHelper.IssueJWT(new TokenModel() { Uid = 1,Icon = "sst",Phone = "16675566723",Sub= "Admin", Uname = "唐磊"}, new TimeSpan(1, 1, 1), new TimeSpan(1, 1, 1));
 		}
 
 		// GET api/values
 		[HttpGet]
+		//[Authorize(Roles = "Admin,Client")]
+		[Authorize(policy:"Permission")]
+		//[Authorize(Policy ="Admin")]
 		public ActionResult<string> Get()
 		{
 			var test = "aaa";
-			_rabbitMqService.Publish(new Student()
-			{
-				age = 1,
-				name = "lilei"
-			});
-			_rabbitMqService.Subscribe<Student>(ea => {
-				test = ea.name + ea.age;
-			});
+			var aa = User.Identities;
 			return test;
 		}
 

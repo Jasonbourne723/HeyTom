@@ -20,8 +20,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HeyTom.Application\HeyTom.Application.csproj" />
+    <ProjectReference Include="..\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss.csproj" />
+    <ProjectReference Include="..\HeyTom.Infra.Cache\HeyTom.Infra.Cache\HeyTom.Infra.Cache.csproj" />
     <ProjectReference Include="..\HeyTom.Infra.Ioc\HeyTom.Infra.Ioc.csproj" />
     <ProjectReference Include="..\HeyTom.Infra.MessageQueue\HeyTom.Infra.MessageQueue.csproj" />
+    <ProjectReference Include="..\HeyTom.Infra.Token\HeyTom.Infra.Token\HeyTom.Infra.Token.csproj" />
     <ProjectReference Include="..\HeyTom.Infra.Util\HeyTom.Infra.Util.csproj" />
   </ItemGroup>
 

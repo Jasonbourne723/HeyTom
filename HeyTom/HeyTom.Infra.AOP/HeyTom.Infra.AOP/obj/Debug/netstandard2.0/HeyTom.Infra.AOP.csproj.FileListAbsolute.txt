@@ -1,0 +1,6 @@
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AOP\HeyTom.Infra.AOP\bin\Debug\netstandard2.0\HeyTom.Infra.AOP.deps.json
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AOP\HeyTom.Infra.AOP\bin\Debug\netstandard2.0\HeyTom.Infra.AOP.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AOP\HeyTom.Infra.AOP\obj\Debug\netstandard2.0\HeyTom.Infra.AOP.csprojAssemblyReference.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AOP\HeyTom.Infra.AOP\obj\Debug\netstandard2.0\HeyTom.Infra.AOP.csproj.CoreCompileInputs.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AOP\HeyTom.Infra.AOP\obj\Debug\netstandard2.0\HeyTom.Infra.AOP.AssemblyInfoInputs.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AOP\HeyTom.Infra.AOP\obj\Debug\netstandard2.0\HeyTom.Infra.AOP.AssemblyInfo.cs

@@ -5103,6 +5103,9 @@
       "HeyTom.Infra.Util/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"
+        },
         "compile": {
           "bin/placeholder/HeyTom.Infra.Util.dll": {}
         },
