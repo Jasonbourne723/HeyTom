@@ -9,7 +9,7 @@ namespace HeyTom.Infraa.Ioc
 	{
 		public static IServiceCollection AddDbContextInjection(this IServiceCollection services, IConfiguration configuration)
 		{
-			return services.AddDbContext<BaseDbContext>(options => options.UseMySQL(configuration.GetConnectionString("Default")));
+			return services.AddDbContext<HeyTomContext>(options => options.UseMySQL(configuration.GetConnectionString("Default")));
 		}
 	}
 }

@@ -1,0 +1,9 @@
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\bin\Release\netstandard2.0\HeyTom.Infra.Cache.deps.json
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\bin\Release\netstandard2.0\HeyTom.Infra.Cache.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\bin\Release\netstandard2.0\HeyTom.Infra.Cache.pdb
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\obj\Release\netstandard2.0\HeyTom.Infra.Cache.csprojAssemblyReference.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\obj\Release\netstandard2.0\HeyTom.Infra.Cache.csproj.CoreCompileInputs.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\obj\Release\netstandard2.0\HeyTom.Infra.Cache.AssemblyInfoInputs.cache
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\obj\Release\netstandard2.0\HeyTom.Infra.Cache.AssemblyInfo.cs
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\obj\Release\netstandard2.0\HeyTom.Infra.Cache.dll
+G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.Cache\HeyTom.Infra.Cache\obj\Release\netstandard2.0\HeyTom.Infra.Cache.pdb

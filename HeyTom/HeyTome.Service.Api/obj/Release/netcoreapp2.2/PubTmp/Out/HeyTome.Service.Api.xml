@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HeyTome.Service.Api</name>
+    </assembly>
+    <members>
+        <member name="T:HeyTome.Service.Api.Controllers.LoginController">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.Get(System.String,System.String,System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.Token(System.String,System.String,System.String)">
+            <summary>
+            获取token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:HeyTome.Service.Api.Controllers.VipController">
+            <summary>
+            vip controller
+            </summary>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.VipController.List(HeyTom.Infra.Util.ViewParam)">
+            <summary>
+            Get Vips
+            </summary>
+            <param name="viewParam"></param>
+            <returns></returns>
+        </member>
+        <member name="F:HeyTom.Infra.Token.TokenAuth._next">
+            <summary>
+            http委托
+            </summary>
+        </member>
+        <member name="M:HeyTom.Infra.Token.TokenAuth.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:HeyTom.Infra.Token.TokenAuth.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            验证授权
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

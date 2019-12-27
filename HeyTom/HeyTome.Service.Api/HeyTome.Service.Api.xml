@@ -4,6 +4,53 @@
         <name>HeyTome.Service.Api</name>
     </assembly>
     <members>
+        <member name="T:HeyTome.Service.Api.Controllers.LoginController">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.Get(System.String,System.String,System.String)">
+            <summary>
+            登录
+            </summary>
+            <param name="userName"></param>
+            <param name="password"></param>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.Token(System.String,System.String,System.String)">
+            <summary>
+            获取token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.LoginController.GitHubCallBcak(System.String)">
+            <summary>
+            github登录回调
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.RegisterController.SendVerificationCode(HeyTom.Application.DTO.EmailDTO)">
+            <summary>
+            给注册邮箱发送验证码
+            </summary>
+            <param name="emailDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeyTome.Service.Api.Controllers.RegisterController.Post(HeyTom.Application.DTO.RegisterInfoDTO)">
+            <summary>
+            注册
+            </summary>
+            <param name="registerInfoDTO"></param>
+            <returns></returns>
+        </member>
         <member name="T:HeyTome.Service.Api.Controllers.VipController">
             <summary>
             vip controller

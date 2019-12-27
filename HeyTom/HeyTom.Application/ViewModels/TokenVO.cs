@@ -8,4 +8,13 @@ namespace HeyTom.Application.ViewModels
 	{
 		public string Token { get; set; }
 	}
+
+	public class UserInfo
+	{
+		public string Name { get; set; }
+
+		public long Id { get; set; }
+
+		public string Role { get; set; }
+	}
 }

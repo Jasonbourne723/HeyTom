@@ -13,10 +13,10 @@ namespace HeyTom.Infra.Implementation
 {
 	public abstract class Repository<T> : IRepository<T> where T : Entity
 	{
-		protected readonly BaseDbContext _baseDbContext;
+		protected readonly DataContext.HeyTomContext _baseDbContext;
 		protected DbSet<T> _set;
 
-		public Repository(BaseDbContext baseDbContext)
+		public Repository(DataContext.HeyTomContext baseDbContext)
 		{
 			_baseDbContext = baseDbContext;
 			_set = _baseDbContext.Set<T>();

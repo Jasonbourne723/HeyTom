@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj": {}
+  },
+  "projects": {
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj",
+        "projectName": "HeyTom.Application",
+        "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\HeyTom.Application.csproj",
+        "packagesPath": "C:\\Users\\CESAAS\\.nuget\\packages\\",
+        "outputPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CESAAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.cesaas.com/nugetserver/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj": {
+                "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj",
+        "projectName": "HeyTom.Domain",
+        "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\HeyTom.Domain.csproj",
+        "packagesPath": "C:\\Users\\CESAAS\\.nuget\\packages\\",
+        "outputPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CESAAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.cesaas.com/nugetserver/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj": {
+                "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj",
+        "projectName": "HeyTom.Infra.Util",
+        "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\HeyTom.Infra.Util.csproj",
+        "packagesPath": "C:\\Users\\CESAAS\\.nuget\\packages\\",
+        "outputPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CESAAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.cesaas.com/nugetserver/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

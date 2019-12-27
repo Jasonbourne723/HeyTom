@@ -9,7 +9,7 @@ namespace HeyTom.Infra.Implementtation
 {
 	public class SimpleSayRepository : Repository<SimpleSay>, ISimpleSayRepository
 	{
-		public SimpleSayRepository(BaseDbContext baseDbContext) : base(baseDbContext)
+		public SimpleSayRepository(DataContext.HeyTomContext baseDbContext) : base(baseDbContext)
 		{
 		}
 

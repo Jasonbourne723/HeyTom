@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using HeyTom.Infra.Cache;
 using HeyTom.Infra.Ioc;
 using HeyTom.Infra.Token;
 using HeyTom.Infra.Token.Authorization;
@@ -56,7 +57,7 @@ namespace HeyTome.Service.Api
 				"wr",//发行人
 				"Blog.Core",//订阅人
 				 new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes("sdfsdfsrty45634kkhllghtdgdfss345t678fs")), SecurityAlgorithms.HmacSha256),//签名凭据
-				expiration: TimeSpan.FromSeconds(2000)//接口的过期时间，注意这里没有了缓冲时间，你也可以自定义，在上边的TokenValidationParameters的 ClockSkew
+				expiration: TimeSpan.FromSeconds(20)//接口的过期时间，注意这里没有了缓冲时间，你也可以自定义，在上边的TokenValidationParameters的 ClockSkew
 				);
 			//注册Swagger生成器，定义一个和多个Swagger 文档
 			services.AddSwaggerGen(c => {
@@ -69,14 +70,16 @@ namespace HeyTome.Service.Api
 					Version = "V1",
 				});
 			});
+			services.AddSingleton<CsRedisBase>();
 			services.AddAuthentication(x => {
 				x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
 				x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-			}).AddJwtBearer(o => {
-				o.TokenValidationParameters = tokenValidationParameters;
-			});
+			})
+			.AddJwtBearer(o => {
+				 o.TokenValidationParameters = tokenValidationParameters;
+			 });
 			services.AddAuthorization(options => {
-				options.AddPolicy("Permission", policy => policy.Requirements.Add(permissionRequirement));
+				//options.AddPolicy("Permission", policy => policy.Requirements.Add(permissionRequirement));
 			});
 			
 			
@@ -91,18 +94,14 @@ namespace HeyTome.Service.Api
 			//});
 
 			// 依赖注入，将自定义的授权处理器 匹配给官方授权处理器接口，这样当系统处理授权的时候，就会直接访问我们自定义的授权处理器了。
-			services.AddSingleton<IAuthorizationHandler, PermissionHandler>();
+			//services.AddSingleton<IAuthorizationHandler, PermissionHandler>();
 			// 将授权必要类注入生命周期内
 			services.AddSingleton(permissionRequirement);
 			//依赖注入
 			services.AddAuoMapper()
 				.AddDbContextInjection(Configuration)
 				.AddDependencyInjection();
-			services.AddMvc(
-				//option => {
-				//	option.Filters.Add(new AuthenticationActionAttribute());
-				//}
-				).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 		}
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{

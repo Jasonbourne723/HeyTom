@@ -52,7 +52,7 @@ namespace HeyTom.Infra.Token.JwtAuthorization
 		/// <param name="claims">需要在登陆的时候配置</param>
 		/// <param name="permissionRequirement">在startup中定义的参数</param>
 		/// <returns></returns>
-		public static dynamic BuildJwtToken(Claim[] claims, PermissionRequirement permissionRequirement)
+		public static string BuildJwtToken(Claim[] claims, PermissionRequirement permissionRequirement)
 		{
 			var now = DateTime.Now;
 			// 实例化JwtSecurityToken
@@ -68,14 +68,7 @@ namespace HeyTom.Infra.Token.JwtAuthorization
 			var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
 
 			//打包返回前台
-			var responseJson = new
-			{
-				success = true,
-				token = encodedJwt,
-				expires_in = permissionRequirement.Expiration.TotalSeconds,
-				token_type = "Bearer"
-			};
-			return responseJson;
+			return encodedJwt;
 		}
 
 		/// <summary>
@@ -83,11 +76,12 @@ namespace HeyTom.Infra.Token.JwtAuthorization
 		/// </summary>
 		/// <param name="jwtStr"></param>
 		/// <returns></returns>
-		public static void SerializeJwt(string jwtStr)
+		public static JwtPayload SerializeJwt(string jwtStr)
 		{
+			jwtStr = jwtStr.Replace("Bearer ", "");
 			var jwtHander = new JwtSecurityTokenHandler();
 			var jwtToken = jwtHander.ReadJwtToken(jwtStr);
-
+			return jwtToken.Payload;
 		}
 	}
 }

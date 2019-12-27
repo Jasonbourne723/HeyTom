@@ -42,5 +42,15 @@ namespace HeyTome.Service.Api.Controllers
 				result = _vipService.GetViewPager(listParam);
 			}, false);
 		}
+
+		[HttpPost]
+		[ProducesResponseType(typeof(ResultModel), 200)]
+		public IActionResult Post([FromBody])
+		{
+			var result = new ResultModel(200);
+			return this.Wrapper(ref result, ()=> {
+
+			}, false);
+		}
 	}
 }

@@ -9,7 +9,7 @@ namespace HeyTom.Infra.Implementtation
 {
 	public class CatRepository : Repository<Cat>, ICatRepository
 	{
-		public CatRepository(BaseDbContext baseDbContext) : base(baseDbContext)
+		public CatRepository(DataContext.HeyTomContext baseDbContext) : base(baseDbContext)
 		{
 		}
 

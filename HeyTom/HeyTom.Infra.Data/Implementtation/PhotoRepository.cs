@@ -9,7 +9,7 @@ namespace HeyTom.Infra.Implementtation
 {
 	public class PhotoRepository : Repository<Photo>, IPhotoRepository
 	{
-		public PhotoRepository(BaseDbContext baseDbContext) : base(baseDbContext)
+		public PhotoRepository(DataContext.HeyTomContext baseDbContext) : base(baseDbContext)
 		{
 		}
 

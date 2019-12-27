@@ -3,13 +3,14 @@ using System.Linq;
 using HeyTom.Domain.Interface;
 using HeyTom.Domain.Models;
 using HeyTom.Infra.DataContext;
+using HeyTom.Infra.Util;
 using Microsoft.EntityFrameworkCore;
 
 namespace HeyTom.Infra.Implementation
 {
 	public class VipRepository : Repository<Vip>, IVipRepository
 	{
-		public VipRepository(BaseDbContext baseDbContext) : base(baseDbContext)
+		public VipRepository(DataContext.HeyTomContext baseDbContext) : base(baseDbContext)
 		{
 		}
 
@@ -22,6 +23,11 @@ namespace HeyTom.Infra.Implementation
 		public override string GetTableName()
 		{
 			return "Vip";
+		}
+
+		public Vip GetVip(string email, string password)
+		{
+			return  _set.FirstOrDefault(x => x.Email == email && x.PassWord == password);
 		}
 	}
 }

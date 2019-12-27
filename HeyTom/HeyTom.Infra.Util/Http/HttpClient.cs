@@ -12,14 +12,21 @@ namespace HeyTom.Infra.Util.Http
 {
 	public class HttpClient
 	{
-		public static string Get(string url, string httpPostType = "application/json;charset=utf-8", CookieContainer cookieContainer = null)
+		private static readonly string DefaultUserAgent = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)";
+		public static string Get(string url,string Authorization= "", string httpPostType = "application/json;charset=utf-8", CookieContainer cookieContainer = null)
 		{
 			HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
 			httpWebRequest.Method = "GET";
 			httpWebRequest.ContentType = httpPostType;
+			httpWebRequest.Headers.Add("Authorization", Authorization);
 			if (cookieContainer != null)
 			{
 				httpWebRequest.CookieContainer = cookieContainer;
+			}
+			if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+			{
+				ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(HttpClient.CheckValidationResult);
+				httpWebRequest.UserAgent = DefaultUserAgent;
 			}
 			string result;
 			using (WebResponse response = httpWebRequest.GetResponse())
@@ -40,6 +47,10 @@ namespace HeyTom.Infra.Util.Http
 			if (cookieContainer != null)
 			{
 				httpWebRequest.CookieContainer = cookieContainer;
+			}
+			if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+			{
+				ServicePointManager.ServerCertificateValidationCallback = new RemoteCertificateValidationCallback(HttpClient.CheckValidationResult);
 			}
 			WebResponse webResponse = await httpWebRequest.GetResponseAsync();
 			string result;

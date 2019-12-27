@@ -7,5 +7,6 @@ namespace HeyTom.Domain.Interface
 	{
 		List<Vip> GetNewVips(int count);
 
+		Vip GetVip(string email, string password);
 	}
 }

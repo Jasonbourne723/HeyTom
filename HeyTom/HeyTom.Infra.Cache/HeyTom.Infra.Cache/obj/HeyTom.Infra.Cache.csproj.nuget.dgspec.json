@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache.csproj": {}
+  },
+  "projects": {
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache.csproj",
+        "projectName": "HeyTom.Infra.Cache",
+        "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache.csproj",
+        "packagesPath": "C:\\Users\\CESAAS\\.nuget\\packages\\",
+        "outputPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.Cache\\HeyTom.Infra.Cache\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CESAAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.cesaas.com/nugetserver/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "CSRedisCore": {
+              "target": "Package",
+              "version": "[3.1.17, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

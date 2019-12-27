@@ -14,4 +14,12 @@ namespace HeyTom.Application.AutoMapper
 			CreateMap<PhotoVO, Photo>();
 		}
 	}
+
+	public class DTOToDOPrfile : Profile
+	{
+		public DTOToDOPrfile()
+		{
+			CreateMap<VipDTO, Vip>();
+		}
+	}
 }

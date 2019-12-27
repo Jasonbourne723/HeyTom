@@ -46,5 +46,36 @@ namespace HeyTom.Infra.Util
 				ContentType = "application/json;charset=utf-8",
 			};
 		}
+
+		protected IActionResult Wrapper<T>(ref TResultModel<T> result, Action action, bool isVaild)
+		{
+			if (isVaild)
+			{
+				if (!ModelState.IsValid)
+				{
+					result.ResultNo = 1;
+					result.Message = ModelState.Keys.SelectMany(x => ModelState[x].Errors.Select(y => new { x, y.ErrorMessage })).ToString();
+					return new ContentResult()
+					{
+						Content = JsonConvert.SerializeObject(result),
+						ContentType = "application/json;charset=utf-8",
+					};
+				}
+			}
+			try
+			{
+				action();
+			}
+			catch (Exception ex)
+			{
+				result.ResultNo = -1;
+				result.Message = "请求失败,请稍后重试";
+			}
+			return new ContentResult()
+			{
+				Content = JsonConvert.SerializeObject(result),
+				ContentType = "application/json;charset=utf-8",
+			};
+		}
 	}
 }

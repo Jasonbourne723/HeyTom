@@ -4,6 +4,5 @@ G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\obj\D
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\obj\Debug\netstandard2.0\HeyTom.Infra.AliYunOss.AssemblyInfoInputs.cache
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\obj\Debug\netstandard2.0\HeyTom.Infra.AliYunOss.AssemblyInfo.cs
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\bin\Debug\netstandard2.0\HeyTom.Infra.AliYunOss.pdb
-G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\obj\Debug\netstandard2.0\HeyTom.Infra.AliYunOss.csprojAssemblyReference.cache
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\obj\Debug\netstandard2.0\HeyTom.Infra.AliYunOss.dll
 G:\MyCode\hey,Tom\mvc\HeyTom\HeyTom.Infra.AliYunOss\HeyTom.Infra.AliYunOss\obj\Debug\netstandard2.0\HeyTom.Infra.AliYunOss.pdb

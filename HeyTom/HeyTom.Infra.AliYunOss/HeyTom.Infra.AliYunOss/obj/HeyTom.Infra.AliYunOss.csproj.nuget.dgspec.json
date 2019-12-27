@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss.csproj": {}
+  },
+  "projects": {
+    "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss.csproj",
+        "projectName": "HeyTom.Infra.AliYunOss",
+        "projectPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss.csproj",
+        "packagesPath": "C:\\Users\\CESAAS\\.nuget\\packages\\",
+        "outputPath": "G:\\MyCode\\hey,Tom\\mvc\\HeyTom\\HeyTom.Infra.AliYunOss\\HeyTom.Infra.AliYunOss\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CESAAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.cesaas.com/nugetserver/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Aliyun.OSS.SDK.NetCore": {
+              "target": "Package",
+              "version": "[2.9.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
